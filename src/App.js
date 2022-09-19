@@ -98,7 +98,7 @@ function App() {
   })
 }
 
-{ modal == true ? <Modal Color={'orange'} 작명={글제목} 여자코트={여자코트} /> : ''}
+{ modal === true ? <Modal Color={'orange'} 작명={글제목} 여자코트={여자코트} /> : ''}
     </div>
     </div>
   );
