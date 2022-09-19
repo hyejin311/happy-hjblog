@@ -1,10 +1,8 @@
-// eslint-disable
 import './App.css';
 import React, { useState } from 'react';
 
 function App() {
 
-  let post = '역곡 디저트 맛집';
   let [글제목 , 글제목변경] = useState([
     '올해 첫 빙수 먹은 날', '뉴진스 앨범깡 ❤️','일주일 연속으로 운동했다!',
     '손목 아파서 물리치료 받고 온 날 😭', '친구가 양모펠트 원숭이를 만들어 선물해줬다'
@@ -113,25 +111,25 @@ function Modal(props){
   )
 }
 
-class Modal2 extends React.Component{
-  constructor(){
-    super();
-    this.state={
-      name : '혜진',
-      age: 26
-    }
-  }
-  render(){
-    return(
-      <div>{this.state.name}
-      {this.state.age}
-      <button onClick={()=>{
-        this.setState({age : '깜찍이'})
-      }}>따단</button>
-      </div>
-    )
-  }
-}
+// class Modal2 extends React.Component{
+//   constructor(){
+//     super();
+//     this.state={
+//       name : '혜진',
+//       age: 26
+//     }
+//   }
+//   render(){
+//     return(
+//       <div>{this.state.name}
+//       {this.state.age}
+//       <button onClick={()=>{
+//         this.setState({age : '깜찍이'})
+//       }}>따단</button>
+//       </div>
+//     )
+//   }
+// }
 
 function 여자코트(){
   document.querySelector('.first').innerHTML='여자 코트 추천';
