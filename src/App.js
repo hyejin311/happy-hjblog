@@ -30,6 +30,12 @@ function App() {
      <h2>HAPPY 혜진 DAY</h2>
      </div>
 
+     <button onClick={()=>{
+      let copy= [...글제목];
+      copy[0]= '여자코트 추천';
+      글제목변경(copy);
+    }}>글수정</button>
+
      <div className='content'>
      <button className='sortBtn' onClick={()=>{
       let sosort= [...글제목];
@@ -104,9 +110,6 @@ function Modal(props){
     <h4 className='first'>{props.여자코트}</h4>
     <p>날짜</p>
     <p>상세내용</p>
-    <button onClick={()=>{
-      {props.여자코트()}
-    }}>글수정</button>
    </div>
   )
 }
